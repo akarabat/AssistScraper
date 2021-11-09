@@ -15,7 +15,6 @@
 import requests
 from bs4 import BeautifulSoup
 from pprint import pprint
-import pandas
 
 def getID(siteurl):
     #site is sitename/players/initial/uniqueID.html
