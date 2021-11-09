@@ -142,3 +142,11 @@ def getAssists(siteurl):
 
 ## Steph Curry
 #getAssists("https://www.basketball-reference.com/players/c/curryst01.html")
+
+##if you want to get your output in reddit table format
+## copy the following into a new project and run
+## input = <paste your output here, including the brackets []>
+##counter = 1
+##for line in input:
+##    print("| " + str(counter) + " | " + line[0] + " | " + str(line[1]))
+##    counter = counter + 1
