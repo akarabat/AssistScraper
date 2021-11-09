@@ -10,7 +10,8 @@ program for /r/nba to use to find list of all players a player assisted and how 
 ################################
 
 
-Step 1- install python
+
+### Step 1- install python
 
 This is what will run the program
 
@@ -21,7 +22,10 @@ click on the python.org link
 click on whatever is there for "download the latest version for windows"
 
 
-Step 2 - download pycharm
+
+
+
+### Step 2 - download pycharm
 
 This is what I used to write/debug the program, so I recommend using it to get that nice output
 
@@ -34,7 +38,10 @@ click on the jetbrains.com link, then click get pycharm in top right
 download the community link
 
 
-Step 3 - Open the program
+
+
+
+### Step 3 - Open the program
 
 This is dumb, but probably the easiest way to do this
 
@@ -55,7 +62,10 @@ if that doesn't work for some reason, click "Python Packages" on the bottom
 type the packages that didn't work in and install them
 
 
-Step 4 - Have fun!
+
+
+
+### Step 4 - Have fun!
 
 scroll down to the bottom where it says "your code here" and run a call of getAssists() with your preferred player's url
 
