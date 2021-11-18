@@ -127,7 +127,6 @@ def getAssists(siteurl):
 #### highly recommend running only one at a time
 
 #### NOTE MAKE SUER TO GET THE WHOLE URL STARTING WITH https:
-#### I CODED THIS THING IN AN HOUR ITS JANKY AF
 #############################
 
 ## Lebron James
