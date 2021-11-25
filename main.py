@@ -36,11 +36,10 @@ def findScorer(linestring):
 
 
 
-def getAssists(siteurl):
+def getAssists(siteurl, foryears=['all']):
     # site is sitename/players/initial/uniqueID.html
     # want to grab uniqueID from that
     myID = getID(siteurl)
-
     ##grab site data
     basesiteinfo = requests.get(siteurl)
 
@@ -64,6 +63,14 @@ def getAssists(siteurl):
             if str1 not in years:
                 if str1.find("playoff") == -1:
                     years.append(str1)
+
+    if foryears[0] != 'all':
+        newyears = []
+        for y in foryears:
+            ycheck = '/players/' + myID[0] + '/' + myID + '/gamelog/' + y
+            if ycheck in years:
+                newyears.append(ycheck)
+        years = newyears.copy()
 
     # go through each year and process each game log
     allgames = []
@@ -115,6 +122,7 @@ def getAssists(siteurl):
     pprint(outdata)
 
 
+
 #############################
 #### your code here
 #### below are commented out (# at begining of line means comment) example calls
@@ -140,6 +148,10 @@ def getAssists(siteurl):
 
 ## Steph Curry
 #getAssists("https://www.basketball-reference.com/players/c/curryst01.html")
+
+##David West
+#getAssists("https://www.basketball-reference.com/players/w/westda01.html")
+getAssists("https://www.basketball-reference.com/players/w/westda01.html", foryears=['2011', '2012'])
 
 ##if you want to get your output in reddit table format
 ## copy the following into a new project and run
